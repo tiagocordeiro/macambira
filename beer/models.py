@@ -62,9 +62,11 @@ class Beer(models.Model):
         self.created_date = timezone.now()
         self.save()
 
-    def save(self):
-        self.slug = slugify(self.name)
-        super(Beer, self).save()
+    def save(self, *args, **kwargs):
+        if not self.id:
+            self.slug = slugify(self.name)
+
+        super(Beer, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.name

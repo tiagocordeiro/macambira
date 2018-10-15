@@ -6,7 +6,7 @@ from .models import Beer, Category, Style
 class BeerAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'style', 'abv')
     search_fields = ('categoty', 'style', 'abv', 'ibu', 'srm')
-    exclude = ('slug',)
+    exclude = ('slug', 'created_date', 'added_by')
 
 
 class CategoryAdmin(admin.ModelAdmin):
