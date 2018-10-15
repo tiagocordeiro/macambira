@@ -1,10 +1,15 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils import timezone
+from django.utils.text import slugify
 
 
 class Beer(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255, unique=True, verbose_name="Slug / URL",
+                            help_text="Preenchido automaticamente, não editar.",
+                            null=True,
+                            blank=True, )
     description = models.TextField()
     image = models.ImageField(
         verbose_name="Imagem",
@@ -56,6 +61,10 @@ class Beer(models.Model):
     def publish(self):
         self.created_date = timezone.now()
         self.save()
+
+    def save(self):
+        self.slug = slugify(self.name)
+        super(Beer, self).save()
 
     def __str__(self):
         return self.name

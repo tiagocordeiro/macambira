@@ -10,7 +10,9 @@
         {{ beer.name }} <span>|</span>
         {{ beer.category }} <span>|</span>
         {{ beer.style }} <span>|</span>
-        {{ beer.abv }}
+        {{ beer.abv }} <span>|</span>
+        <b>{{ beer.slug }}</b>
+    <a href='{% url 'beer_details' slug=beer.slug %}'>{{ beer.name }}</a>
     </p>
 {% endfor %}
 </body>
