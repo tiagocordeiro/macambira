@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     # My Apps
     'core',
     'website',
+    'beer',
 ]
 
 MIDDLEWARE = [
