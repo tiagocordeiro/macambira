@@ -6,6 +6,12 @@ from django.utils import timezone
 class Beer(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
+    image = models.ImageField(
+        verbose_name="Imagem",
+        upload_to='cervejas/',
+        null=True,
+        blank=True,
+    )
     abv = models.PositiveIntegerField(
         verbose_name="Alcohol By Volume",
         null=True,
