@@ -12,8 +12,10 @@ class Beer(models.Model):
         null=True,
         blank=True,
     )
-    abv = models.PositiveIntegerField(
+    abv = models.DecimalField(
         verbose_name="Alcohol By Volume",
+        decimal_places=2,
+        max_digits=4,
         null=True,
         blank=True,
     )

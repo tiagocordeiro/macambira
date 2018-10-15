@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for beer in beers %}
+    <p>
+        {{ beer.name }} <span>|</span>
+        {{ beer.category }} <span>|</span>
+        {{ beer.style }} <span>|</span>
+        {{ beer.abv }}
+    </p>
+{% endfor %}
+</body>
+</html>

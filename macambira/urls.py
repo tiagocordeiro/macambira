@@ -25,4 +25,5 @@ admin.site.site_header = 'Macambira Beer'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('website.urls')),
+    path('beer/', include('beer.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
