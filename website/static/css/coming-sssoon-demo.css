@@ -62,7 +62,7 @@
 }
 .navigation-example{
     height: 660px;
-    background-image: url('../img/bg.jpg');
+    background-image: url('../images/default.jpg');
     background-position: center center;
     background-size: cover;
     position: relative;
