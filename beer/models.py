@@ -17,32 +17,52 @@ class Beer(models.Model):
         null=True,
         blank=True,
     )
-    abv = models.DecimalField(
+    abv = models.CharField(
         verbose_name="Alcohol By Volume",
-        decimal_places=2,
-        max_digits=4,
+        max_length=10,
         null=True,
         blank=True,
     )
-    ibu = models.PositiveIntegerField(
+    ibu = models.CharField(
         verbose_name="International Bitterness Units",
+        max_length=10,
         null=True,
         blank=True,
     )
-    srm = models.PositiveIntegerField(
+    srm = models.CharField(
         verbose_name="Standard Reference Method",
+        max_length=10,
         null=True,
         blank=True,
+    )
+    examples = models.CharField(
+        verbose_name="Exemplos",
+        max_length=200,
+        null=True,
+        blank=True,
+
+    )
+    original_gravity = models.CharField(
+        verbose_name='Gravidade Inicial',
+        max_length=20,
+        blank=True,
+        null=True
+    )
+    final_gravity = models.CharField(
+        verbose_name='Gravidade Final',
+        max_length=20,
+        blank=True,
+        null=True
     )
     category = models.ForeignKey(
         'Category',
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         null=True,
         blank=True,
     )
     style = models.ForeignKey(
         'Style',
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         null=True,
         blank=True,
     )

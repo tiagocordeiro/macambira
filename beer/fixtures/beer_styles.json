@@ -1,0 +1,100 @@
+[
+  {
+    "model": "beer.style",
+    "pk": 1,
+    "fields": {
+      "name": "WHEAT BEER"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 2,
+    "fields": {
+      "name": "LAMBIC & SOUR"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 3,
+    "fields": {
+      "name": "BELGIAN ALE"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 4,
+    "fields": {
+      "name": "PALE ALE"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 5,
+    "fields": {
+      "name": "ENGLISH BITTER"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 6,
+    "fields": {
+      "name": "SCOTISH ALE"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 7,
+    "fields": {
+      "name": "BROWN ALE"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 8,
+    "fields": {
+      "name": "PORTER"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 9,
+    "fields": {
+      "name": "STOUT"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 10,
+    "fields": {
+      "name": "PILSNER"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 11,
+    "fields": {
+      "name": "AMERICAN LAGER"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 12,
+    "fields": {
+      "name": "EUROPEAN LAGER"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 13,
+    "fields": {
+      "name": "BOCK"
+    }
+  },
+  {
+    "model": "beer.style",
+    "pk": 14,
+    "fields": {
+      "name": "ESTILOS HÍBRIDOS"
+    }
+  }
+]

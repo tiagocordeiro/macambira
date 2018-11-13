@@ -1,0 +1,23 @@
+[
+  {
+    "model": "beer.category",
+    "pk": 1,
+    "fields": {
+      "name": "ALE"
+    }
+  },
+  {
+    "model": "beer.category",
+    "pk": 2,
+    "fields": {
+      "name": "LAGER"
+    }
+  },
+  {
+    "model": "beer.category",
+    "pk": 3,
+    "fields": {
+      "name": "MIXED"
+    }
+  }
+]
