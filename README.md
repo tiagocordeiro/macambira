@@ -1,5 +1,8 @@
 # Macambira Beer
 [![Build Status](https://travis-ci.org/tiagocordeiro/macambira.svg?branch=master)](https://travis-ci.org/tiagocordeiro/macambira)
+[![Updates](https://pyup.io/repos/github/tiagocordeiro/macambira/shield.svg)](https://pyup.io/repos/github/tiagocordeiro/macambira/)
+[![Python 3](https://pyup.io/repos/github/tiagocordeiro/macambira/python-3-shield.svg)](https://pyup.io/repos/github/tiagocordeiro/macambira/)
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 
 ## Como rodar o projeto?
