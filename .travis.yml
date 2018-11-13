@@ -5,7 +5,7 @@ services:
   postgresql
 env:
   global:
-    - DJANGO_SETTINGS_MODULE="sna.settings"
+    - DJANGO_SETTINGS_MODULE="macambira.settings"
 addons:
   postgresql: '9.5'
 # command to install dependencies
