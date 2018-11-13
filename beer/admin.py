@@ -5,8 +5,9 @@ from .models import Beer, Category, Style
 
 class BeerAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'style', 'abv')
-    search_fields = ('categoty', 'style', 'abv', 'ibu', 'srm')
+    search_fields = ('name', 'categoty', 'style', 'abv', 'ibu', 'srm')
     exclude = ('slug', 'created_date', 'added_by')
+    list_filter = ('category', 'style')
 
 
 class CategoryAdmin(admin.ModelAdmin):
