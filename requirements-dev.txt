@@ -1,5 +1,5 @@
 pycodestyle==2.6.0
-pyflakes==2.2.0
+pyflakes==2.4.0
 
 # Debug Toolbar
 django-debug-toolbar==2.2
