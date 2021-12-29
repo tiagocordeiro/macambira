@@ -13,7 +13,7 @@ six==1.15.0
 # Heroku
 gunicorn==20.0.4
 django-heroku==0.3.1
-psycopg2==2.8.5
+psycopg2==2.9.3
 psycopg2-binary==2.8.5
 whitenoise==5.1.0
 
